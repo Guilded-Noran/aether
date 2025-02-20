@@ -1,16 +1,12 @@
-<!DOCTYPE html>
 <html>
-    <head>
-        <style>
-            body {
-                text-align: center;
-            }
-        </style>
-    </head>
-    <body>
-        <form action="/service/gateway/" method="POST">
-            <input name="url" placeholder="Search the web">
-            <input type="submit" value="Go">
-        </form>
-    </body>
+<head>
+    <title>Abatek Proxy</title>
+</head>
+<body>
+    <h2>Browse Abatek Unblocked</h2>
+    <form onsubmit="event.preventDefault(); window.location.href='/service/' + btoa(document.getElementById('url').value)">
+        <input type="text" id="url" placeholder="Enter URL (e.g., https://data.abatek.com)">
+        <button type="submit">Go</button>
+    </form>
+</body>
 </html>
